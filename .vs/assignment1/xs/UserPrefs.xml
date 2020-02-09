@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{97E65EB3-7DE8-BEF0-2BC4-A48152EF8A2D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/TransformNoseCoordinates.cs">
+    <Files>
+      <File FileName="Assets/ShuttleLandingAlignment.cs" Line="15" Column="14" />
+      <File FileName="Assets/TransformNoseCoordinates.cs" Line="20" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="assignment1" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="TransformNoseCoordinates.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bcecd8dd-610c-405c-9895-9fa2b1b15f95" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

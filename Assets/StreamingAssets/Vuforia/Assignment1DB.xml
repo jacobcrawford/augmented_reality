@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="ship1" size="0.090000 0.138293" />
+    <ImageTarget name="runway" size="0.100000 0.285185" />
+    <ImageTarget name="ship2" size="0.090000 0.133269" />
+    <ImageTarget name="earth" size="0.200000 0.196154" />
+  </Tracking>
+</QCARConfig>
