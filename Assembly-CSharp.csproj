@@ -63,7 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BattleSet.cs" />
     <Compile Include="Assets\ShuttleLandingAlignment.cs" />
+    <Compile Include="Assets\Test.cs" />
     <Compile Include="Assets\TransformNoseCoordinates.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
