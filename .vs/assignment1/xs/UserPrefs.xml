@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{97E65EB3-7DE8-BEF0-2BC4-A48152EF8A2D}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/BattleSet.cs">
     <Files>
-      <File FileName="Assets/BattleSet.cs" Line="22" Column="37" />
+      <File FileName="Assets/BattleSet.cs" Line="28" Column="1" />
       <File FileName="Assets/ShuttleLandingAlignment.cs" />
       <File FileName="Assets/TransformNoseCoordinates.cs" />
-      <File FileName="Assets/Test.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

@@ -11,33 +11,38 @@ public class BattleSet : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        
+    { 
         falcon = GameObject.Find("FalconTarget");
-        cannon1 = Instantiate(cannon1, transform);
-        cannon2 = Instantiate(cannon2, transform);
+        cannon1 = GameObject.Find("Cannon1");
+        cannon2 = GameObject.Find("Cannon2");
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Falcon positionn
-        Matrix4x4 falconMatrix = Matrix4x4.TRS(falcon.transform.position, falcon.transform.rotation, falcon.transform.lossyScale);
+        // Falcon rotation
+        Vector3 falconRotation = falcon.transform.rotation.eulerAngles;
+        // Falcon position
+        Vector3 falconPosition = falcon.transform.position;
+
+        Matrix4x4 falconMatrix =
+            T(falconPosition.x, falconPosition.y, falconPosition.z) *
+            Ry(falconRotation.y * Mathf.Deg2Rad) *
+            Rx(falconRotation.x * Mathf.Deg2Rad) *
+            Rz(falconRotation.z * Mathf.Deg2Rad);
+
 
         //canon1 position relative
         Matrix4x4 cannonMatrix1 = falconMatrix
-            * S(0.02f, 0.02f, 0.02f)
-            * T(2f, 0, 20f);
-
+            *T(0.01f, 0, 0.05f);
         //canon2 position relative
         Matrix4x4 cannonMatrix2 = falconMatrix
-            * S(0.02f, 0.02f, 0.02f)
-            * T(-2f, 0, 20f);
+            * T(-0.01f, 0, 0.05f);
 
         cannon1.transform.position = cannonMatrix1.GetColumn(3);
-        cannon1.transform.rotation = cannonMatrix1.rotation;
-
         cannon2.transform.position = cannonMatrix2.GetColumn(3);
+
+        cannon1.transform.rotation = cannonMatrix1.rotation;
         cannon2.transform.rotation = cannonMatrix2.rotation;
 
         if (Input.GetKeyUp(KeyCode.X))
@@ -47,7 +52,6 @@ public class BattleSet : MonoBehaviour
             ShootCanon(falcon);
         }
     }
-
 
     void ShootCanon(GameObject canon)
     {
